@@ -1,0 +1,27 @@
+# VS code config files
+/.vscode
+
+# app dependencies
+/app/node_modules/
+/app/.pnp
+/app/.pnp.js
+
+# app testing
+/app/coverage
+
+# app production
+/app/build/
+
+# app misc
+/app/.DS_Store
+/app/.env.local
+/app/.env.development.local
+/app/.env.test.local
+/app/.env.production.local
+
+/app/npm-debug.log*
+/app/yarn-debug.log*
+/app/yarn-error.log*
+
+# log files
+/logs/
