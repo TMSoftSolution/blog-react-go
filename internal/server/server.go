@@ -1,13 +1,14 @@
 package server
 
 import (
+	"rgb/internal/conf"
 	"rgb/internal/database"
 	"rgb/internal/store"
 )
 
-func Start() {
+func Start(cfg conf.Config) {
 
-	store.SetDBConnection(database.NewDBOptions())
+	store.SetDBConnection(database.NewDBOptions(cfg))
 
 	router := setRouter()
 
