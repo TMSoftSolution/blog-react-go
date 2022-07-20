@@ -5,3 +5,4 @@
 - Postgresql (go-pg)
 - Gin Service
 - GoDotEnv
+- Zerolog
