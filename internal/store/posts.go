@@ -31,7 +31,7 @@ func FetchUserPosts(user *User) error {
 		Relation("Posts", func(q *pg.Query) (*pg.Query, error) {
 			return q.Order("id ASC"), nil
 		}).
-		Select()
+		First()
 
 	if err != nil {
 		log.Error().Err(err).Msg("Error fetching user's posts")

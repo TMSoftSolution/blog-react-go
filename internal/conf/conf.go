@@ -31,7 +31,7 @@ type Config struct {
 }
 
 func NewConfig() Config {
-	err := godotenv.Load("../.env")
+	err := godotenv.Load(".env")
 	if err != nil {
 		println(err.Error())
 		log.Fatalf("Error loading .env file")
