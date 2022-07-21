@@ -3,7 +3,7 @@ package store
 import (
 	"time"
 
-	"github.com/go-pg/pg/v10/orm"
+	"github.com/go-pg/pg/v10"
 	"github.com/rs/zerolog/log"
 )
 
@@ -28,10 +28,10 @@ func AddPost(user *User, post *Post) error {
 
 func FetchUserPosts(user *User) error {
 	err := db.Model(user).
-		Relation("Posts", func(q *orm.Query) (*orm.Query, error) {
+		Relation("Posts", func(q *pg.Query) (*pg.Query, error) {
 			return q.Order("id ASC"), nil
 		}).
-		First()
+		Select()
 
 	if err != nil {
 		log.Error().Err(err).Msg("Error fetching user's posts")
