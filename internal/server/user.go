@@ -2,7 +2,7 @@ package server
 
 import (
 	"net/http"
-	"rgb/internal/store"
+	"tm/internal/store"
 
 	"github.com/gin-gonic/gin"
 )

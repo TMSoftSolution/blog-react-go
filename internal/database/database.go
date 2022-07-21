@@ -1,7 +1,7 @@
 package database
 
 import (
-	"rgb/internal/conf"
+	"tm/internal/conf"
 
 	"github.com/go-pg/pg/v10"
 )

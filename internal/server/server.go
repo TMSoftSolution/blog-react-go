@@ -1,9 +1,9 @@
 package server
 
 import (
-	"rgb/internal/conf"
-	"rgb/internal/database"
-	"rgb/internal/store"
+	"tm/internal/conf"
+	"tm/internal/database"
+	"tm/internal/store"
 )
 
 func Start(cfg conf.Config) {

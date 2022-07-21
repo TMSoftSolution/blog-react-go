@@ -4,9 +4,9 @@ import (
 	"flag"
 	"fmt"
 	"os"
-	"rgb/internal/conf"
-	"rgb/internal/database"
-	"rgb/internal/store"
+	"tm/internal/conf"
+	"tm/internal/database"
+	"tm/internal/store"
 
 	"github.com/go-pg/migrations/v8"
 )

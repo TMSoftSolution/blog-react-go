@@ -25,7 +25,7 @@ const NavigationBar = () => {
         <div className="d-flex flex-row">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item">
-              <Link className="nav-link" to="/">RGB</Link>
+              <Link className="nav-link" to="/">Blog</Link>
             </li>
             {loggedIn && (
               <li className="nav-item">

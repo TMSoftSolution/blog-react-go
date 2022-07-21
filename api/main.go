@@ -1,8 +1,8 @@
 package main
 
 import (
-	"rgb/internal/conf"
-	"rgb/internal/server"
+	"tm/internal/conf"
+	"tm/internal/server"
 )
 
 func main() {
