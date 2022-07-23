@@ -60,7 +60,7 @@ go run . up
 go run main.go
 ```
 
-For the host reload
+For the hot reload
 ```bash
 air init
 air server --port 8080
